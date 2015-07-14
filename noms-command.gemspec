@@ -1,4 +1,4 @@
-# coding: utf-8
+ypt# coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'noms/command/version'
@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
     spec.require_paths = ["lib"]
 
     spec.add_runtime_dependency "therubyracer"
+    spec.add_runtime_dependency "httpclient"
     spec.add_runtime_dependency "mime-types"
     spec.add_runtime_dependency "typhoeus"
     spec.add_runtime_dependency "json"
